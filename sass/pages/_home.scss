@@ -1,0 +1,176 @@
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body, ul, li, h1, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.as-block {
+  display: block;
+
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+.member-tag {
+  position: relative;
+  bottom: 94px;
+  max-width: 370px;
+  width: 100%;
+  max-height: 80px;
+  height: 100%;
+  background-color: #df001f;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  display: block;
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  h5 {
+    margin: 0;
+    padding: 15px 0 5px 15px;
+  }
+  span {
+    padding: 15px 0 5px 15px;
+    font-size: 16px;
+    font-family: 'DroidSans', sans-serif;
+  }
+  &:hover {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: 175px;
+    max-width: 370px;
+    width: 100%;
+    max-height: 160px;
+    height: 100%;
+  }
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  max-width: 370px;
+  width: 100%;
+  max-height: 80px;
+  height: 100%;
+}
+
+.member-tag:hover {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  bottom: 175px;
+  max-width: 370px;
+  width: 100%;
+  max-height: 160px;
+  height: 100%;
+
+}
+
+.member-tag:hover .submenu {
+  display: block;
+  padding: 15px 0 5px 15px;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  float: left;
+  padding: 5px 0;
+}
+
+dd {
+  padding: 5px 50px;
+
+}
+
+dl {
+  padding: 5px;
+  color: #333333;
+  font-family: 'DroidSans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.founder {
+  color: #ffffff;
+  margin: 10px auto;
+  padding: 0;
+  background: url('../img/founder.png') 100% 100% no-repeat;
+  background-size: cover;
+  min-height: 370px;
+  text-align: left;
+}
+
+.founder p span.as-block {
+  margin: -30px 0 50px 0;
+}
+
+.founder-text-position {
+  padding: 86px 0 5px 101px;
+  max-width: 556px;
+  width: 100%;
+}
+
+.popup {
+  display: none;
+}
+
+.popup.show {
+  display: block;
+  width: 50%;
+  height: auto;
+  background-color: rgba(40, 40, 80, 0.5);
+  border: 2px solid #df001f;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  a {
+    color: #ffffff;
+    padding: 5px;
+    border: 1px solid #333333;
+    &:hover {
+      color: #df001f;
+    }
+  }
+}
